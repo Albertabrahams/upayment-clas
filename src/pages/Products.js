@@ -2,9 +2,15 @@
 import { Link } from "react-router-dom";
 import styles from "./Products.module.css";
 import { AiFillPlusCircle } from 'react-icons/ai';
+import { async } from "@firebase/util";
+import axios from "axios";
 
 
-const Products = ({products}) => {
+const Products = ({products, baseUrl, fetchTasks}) => {
+
+  const HandleDelete = async (e)=>{ 
+    await axios.delete(`${baseUrl}/${e.target.id}`)
+  }
 
   return (
     <div>
@@ -21,7 +27,7 @@ const Products = ({products}) => {
   <div className="card-body">
     <h5 className="card-title font-weight-bold">{each.name}</h5>
     <p className="card-text text-center font-weight-bold">${each.price}</p>
-    <a href="#" className="btn btn-primary">Delete</a>
+    <a href="#" className="btn btn-primary" onClick={HandleDelete}>Delete</a>
   </div>
 </div>
             {/* <img className={styles.img} style={{ width: "100px" }} src={each.avatar} alt="" />

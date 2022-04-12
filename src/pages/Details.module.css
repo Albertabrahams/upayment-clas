@@ -1,0 +1,32 @@
+.container{
+    border-radius: 3px;
+    width: 50%;
+    margin: auto;
+
+}
+.detailsWrapper {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+  }
+  
+  .detailsImage {
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .detailsNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .detailsNavIcon {
+    cursor: pointer;
+  }
+  
+  .desc{
+      padding: 1rem;
+  }

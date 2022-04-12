@@ -1,25 +1,7 @@
 import React from "react";
 import Products from "./Products";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
-const Main = () => {
-
-  const baseUrl = "https://62286b649fd6174ca82321f1.mockapi.io/case-study/products/"
-
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetchTasks();
-  }, []);
-
-  const fetchTasks = async () => {
-   
-    const {data} = await axios.get(baseUrl);
-    // console.log(data);
-
-    setProducts(data);
-  };
+const Main = ({products, baseUrl, fetchTasks}) => {
 
   return (
   <div>
@@ -45,7 +27,7 @@ const Main = () => {
 
   </div>
       <div>
-      <Products products={products}/>
+      <Products products={products} baseUrl={baseUrl} fetchTasks={fetchTasks}/>
       </div>
     </div>
 
