@@ -10,14 +10,13 @@ import {
 //* https://console.firebase.google.com/ => project settings
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBqzP_Qe5UD4BH3YqR5HaelDlh0qTObgf0",
-    authDomain: "movieapp-e9023.firebaseapp.com",
-    projectId: "movieapp-e9023",
-    storageBucket: "movieapp-e9023.appspot.com",
-    messagingSenderId: "683082563183",
-    appId: "1:683082563183:web:f1afebecbd3225bd61d79a",
-    measurementId: "G-N9NLL9MZJF"
-  };
+  apiKey: "AIzaSyCPKQKIfOERWXaH_W6HGrMe4j_5KyUlDh8",
+  authDomain: "upayments-fe0da.firebaseapp.com",
+  projectId: "upayments-fe0da",
+  storageBucket: "upayments-fe0da.appspot.com",
+  messagingSenderId: "1022245470992",
+  appId: "1:1022245470992:web:4068bad9084fee8e7f1b95"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
