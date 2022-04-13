@@ -39,7 +39,7 @@ const Details = () => {
         /></div>
         
         <div>
-        <p><strong>{product?.name}</strong></p>
+        <h1><strong>{product?.name}</strong></h1>
         <br /><br /><br /><br />
         <p><strong>${product?.price}</strong></p>
         </div>
