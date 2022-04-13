@@ -9,12 +9,13 @@
     padding: 10px;
     display: flex;
     flex-direction: row ;
-    justify-content: space-evenly;
+    
   }
   
   .detailsImage {
-    width: 10rem;
+    width: 70%;
     height: 10rem;
+    justify-content: flex-start;
   }
   
   .detailsNav {
@@ -28,5 +29,6 @@
   }
   
   .desc{
-      padding: 1rem;
+    margin: 1rem;
+    padding: 1rem;
   }
