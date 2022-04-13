@@ -23,12 +23,16 @@ const AppRouter = () => {
     // console.log(data);
 
     setProducts(data);
+    setFilteredProduct(data);
   };
+
+  const [filteredProduct, setFilteredProduct] = useState([])
+
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Main products={products} baseUrl={baseUrl} fetchTasks={fetchTasks}/>} />
+        <Route path="/" element={<Main products={products} setFilteredProduct={setFilteredProduct} filteredProduct={filteredProduct} baseUrl={baseUrl} fetchTasks={fetchTasks}/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/details/:productId" element={<Details />} />

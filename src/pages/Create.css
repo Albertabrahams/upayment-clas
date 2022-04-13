@@ -23,3 +23,18 @@
     margin: 2rem;
     font-weight: bolder;
 }
+
+.detailsNav {
+    display: flex;
+    float: left;
+  }
+  
+  .detailsNavIcon {
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+  }
+  .but{
+      background-color: white;  
+      margin-top: 1rem;
+  }

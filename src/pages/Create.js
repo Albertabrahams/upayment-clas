@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./Create.css"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import BackArrow from "../assets/BackArrow";
+import { getDefaultNormalizer } from "@testing-library/react";
 
 const Create = ({baseUrl,fetchTasks}) => {
 
@@ -15,10 +17,11 @@ const Create = ({baseUrl,fetchTasks}) => {
 
   const navigate = useNavigate();
 
-
+  const developerEmail="halilibrahim.soyman@gmail.com";
+  
   const handleSubmit = (event) => {
     event.preventDefault();
-    const newProduce ={name,description,avatar,category,price}; 
+    const newProduce ={name,description,avatar,category,price,developerEmail}; 
     newProducts(newProduce);
     setName("");
     setDescription("");
@@ -37,6 +40,14 @@ const Create = ({baseUrl,fetchTasks}) => {
   };
 
   return (
+    <div>
+    <div className="detailsNav">
+    <BackArrow
+      className="detailsNavIcon"
+      onClick={() => navigate(-1)}
+    />
+    </div>
+
     <div className='create-form'>
       
       <h3 className="title">Create Product</h3>
@@ -101,12 +112,13 @@ const Create = ({baseUrl,fetchTasks}) => {
       </div>
 
       <div>
-          <button type="submit" className='input-box'><strong>SUBMIT</strong></button>
+          <button type="submit" className='input-box but'><strong>SUBMIT</strong></button>
       </div>
       
       
 
       </form>
+    </div>
     </div>
   )
 }

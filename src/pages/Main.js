@@ -1,7 +1,17 @@
 import React from "react";
 import Products from "./Products";
 
-const Main = ({products, baseUrl, fetchTasks}) => {
+const Main = ({products, baseUrl, fetchTasks,setFilteredProduct,filteredProduct}) => {
+  
+
+  const handleCategory = (e)=> {
+    if(e.target.value=="categories"){
+      setFilteredProduct(products);
+    }
+    else{
+    const filtered = products.filter(product=>product.category==e.target.value);
+    setFilteredProduct(filtered);
+  }}
 
   return (
   <div>
@@ -16,6 +26,7 @@ const Main = ({products, baseUrl, fetchTasks}) => {
     <select 
     className="btn btn-light btn-sm dropdown-toggle mt-4" 
     id="dropdown"
+    onChange={handleCategory}
     >
         <option value="categories" selected>Categories</option>
         <option value="electronics" >Electronics</option>
@@ -27,7 +38,7 @@ const Main = ({products, baseUrl, fetchTasks}) => {
 
   </div>
       <div>
-      <Products products={products} baseUrl={baseUrl} fetchTasks={fetchTasks}/>
+      <Products baseUrl={baseUrl} filteredProduct={filteredProduct} fetchTasks={fetchTasks}/>
       </div>
     </div>
 

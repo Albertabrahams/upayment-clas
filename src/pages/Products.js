@@ -5,7 +5,7 @@ import { AiFillPlusCircle } from 'react-icons/ai';
 import axios from "axios";
 
 
-const Products = ({products, baseUrl, fetchTasks}) => {
+const Products = ({baseUrl, fetchTasks, filteredProduct}) => {
   const navigate = useNavigate();
 
   const HandleDelete = async (e)=>{ 
@@ -19,7 +19,7 @@ const Products = ({products, baseUrl, fetchTasks}) => {
     <div>
       
       <div className={styles.products}>
-        {products.map((each) => (
+        {filteredProduct.map((each) => (
 
           <span
             id={each.id}
