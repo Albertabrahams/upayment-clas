@@ -1,36 +1,20 @@
-Project Skeleton
-|----readme.md         (Definition of the project)
-SOLUTION
-├── public
-│     └── index.html
-├── src
-|    |__ assets
-|    |     |__ BackArrow.js
-|    |     |__ CheckoutBag.js
-|    |         
-│    ├── auth
-│    │     └── firebase.js
-│    ├── components
-│    │     ├
-│    │     └── Navbar.js
-│    │
-│    ├── pages
-│    │     ├── Create.css
-│    │     ├── Create.js
-│    │     ├── Detail.js
-│    │     ├── Detail.module.css
-│    │     └── Login.js
-│    │     ├── Main.js
-│    │     └── Products.js
-│    │     ├── Products.module.css
-│    │     └── Register.js
-│    │
-│    ├── router
-│    │     └── AppRouter.js
-│    ├── App.js
-│    ├── index.js
-│    └── index.css
-├── package.json
+### Project Link : https://upayments.herokuapp.com/
+
+#### `PLEASE READ THE TEXT BELOW SKELETON..`
+
+## Project Skeleton:
+
+![Skeleton](https://user-images.githubusercontent.com/93812075/163286490-977f1210-9a06-4f70-aa10-dc536522c1e0.png)
+
+1- I made the project totaly same like sample task, but added some extras.<br>
+2- I used useState, useEffect, useParam, useNavigate. <br>
+3- For extra, I added Login and Register buttons with a firebase file. You can use halilibrahim.soyman@gmail.com as a user and 123456 <br> as a password or you can register with your email. I keep them in firebase.<br>
+4- I added two assets as extras.<br>
+5- All of task is done. You can create a new product with plus icon or delete it with delete button or click a product and see details.<br>
+6- You didn't mention about delete button position so i made it manually.<br>
+7- In main page, filter button is active. You can filter products.<br>
+8- Finally, I used .env and deploy project with Heroku. I hope you like it. Please share your opinions with me about it. <br>
+9- I could add more extras but i didn't want to lose main project path. Thank you!<br>
 
 
 # Getting Started with Create React App
