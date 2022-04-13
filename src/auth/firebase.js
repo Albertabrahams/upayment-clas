@@ -10,12 +10,12 @@ import {
 //* https://console.firebase.google.com/ => project settings
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCPKQKIfOERWXaH_W6HGrMe4j_5KyUlDh8",
-  authDomain: "upayments-fe0da.firebaseapp.com",
-  projectId: "upayments-fe0da",
-  storageBucket: "upayments-fe0da.appspot.com",
-  messagingSenderId: "1022245470992",
-  appId: "1:1022245470992:web:4068bad9084fee8e7f1b95"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
