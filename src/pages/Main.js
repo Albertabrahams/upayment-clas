@@ -13,10 +13,6 @@ const Main = ({products, baseUrl, fetchTasks,setFilteredProduct,filteredProduct}
     setFilteredProduct(filtered);
   }}
 
-  const searchChange = (e) => {
-    
-  }
-
   return (
   <div>
   <div  
@@ -30,7 +26,7 @@ const Main = ({products, baseUrl, fetchTasks,setFilteredProduct,filteredProduct}
       type="search" 
       placeholder="Apple Watch, Samsung S21, Macbook Pro.." 
       aria-label="Search"
-      onChange={searchChange}/>
+      />
     </form>
     <select 
     className="btn btn-light btn-sm dropdown-toggle mt-4" 
