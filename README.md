@@ -1,4 +1,37 @@
-Project Link : https://react-router-basic-project.netlify.app/products
+Project Skeleton
+|----readme.md         (Definition of the project)
+SOLUTION
+├── public
+│     └── index.html
+├── src
+|    |__ assets
+|    |     |__ BackArrow.js
+|    |     |__ CheckoutBag.js
+|    |         
+│    ├── auth
+│    │     └── firebase.js
+│    ├── components
+│    │     ├
+│    │     └── Navbar.js
+│    │
+│    ├── pages
+│    │     ├── Create.css
+│    │     ├── Create.js
+│    │     ├── Detail.js
+│    │     ├── Detail.module.css
+│    │     └── Login.js
+│    │     ├── Main.js
+│    │     └── Products.js
+│    │     ├── Products.module.css
+│    │     └── Register.js
+│    │
+│    ├── router
+│    │     └── AppRouter.js
+│    ├── App.js
+│    ├── index.js
+│    └── index.css
+├── package.json
+
 
 # Getting Started with Create React App
 

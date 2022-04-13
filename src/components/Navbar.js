@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg m-4 p-2 rounded-3" >
         <div className="container-fluid">
           <Link to={"/"} className="navbar-brand text-black">
-            <h4>UPayments Store</h4>
+            <h4><strong><em>UPayments Store</em></strong></h4>
           </Link>
           <div className="d-flex text-black align-items-center">
             {currentUser ? (
@@ -22,7 +22,7 @@ const Navbar = () => {
                 className="ms-2 btn btn-outline-dark"
                 onClick={() => navigate("/login")}
               >
-                Login
+                <strong><em>Login</em></strong>
               </button>
             )}
 
@@ -33,7 +33,7 @@ const Navbar = () => {
                 className="ms-2 btn btn-outline-dark"
                 onClick={() => navigate("/register")}
               >
-                Register
+                <strong><em>Register</em></strong>
               </button>
             )}
           </div>
