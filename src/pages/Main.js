@@ -3,7 +3,6 @@ import Products from "./Products";
 
 const Main = ({products, baseUrl, fetchTasks,setFilteredProduct,filteredProduct}) => {
   
-
   const handleCategory = (e)=> {
     if(e.target.value=="categories"){
       setFilteredProduct(products);
