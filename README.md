@@ -13,8 +13,9 @@
 5- All of task is done. You can create a new product with plus icon or delete it with delete button or click a product and see details.<br>
 6- You didn't mention about delete button position so i made it manually.<br>
 7- In main page, filter button is active. You can filter products.<br>
-8- Finally, I used .env and deploy project with Heroku. I hope you like it. Please share your opinions with me about it. <br>
-9- I could add more extras but i didn't want to lose main project path. Thank you!<br>
+8- Also, I use Bootstrap, regular css, css module for styles.
+9- Finally, I used .env and deploy project with Heroku. I hope you like it. Please share your opinions with me about it. <br>
+10- I could add more extras but i didn't want to lose main project path. Thank you!<br>
 
 
 # Getting Started with Create React App
