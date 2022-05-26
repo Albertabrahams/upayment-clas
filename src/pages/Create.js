@@ -17,7 +17,7 @@ const Create = ({baseUrl,fetchTasks}) => {
 
   const navigate = useNavigate();
 
-  const developerEmail="halilibrahim.soyman@gmail.com";
+  const developerEmail="TheAnswertoBadHumanResource@gmail.com";
   
   const handleSubmit = (event) => {
     event.preventDefault();
